@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
 </head>
+
 <body>
-     <table width="50%" border="1">
+    <table width="50%" border="1" align="center" cellspacing="0">
         <tr>
             <td>Id</td>
             <td>Name</td>
@@ -19,8 +22,15 @@
             <td>{{name}}</td>
             <td>{{price}}</td>
             <td><a href="/delete?id={{_id}}">Delete</a></td>
-        </tr>  
+        </tr>
         {{/each}}
     </table>
+    <br>
+    <div align="center">
+        <button name="button" type="button"><a href="/add">New products</a></button>
+    </div>
+    {{!-- <a href="/add">New products</a> --}}
+
 </body>
+
 </html>
